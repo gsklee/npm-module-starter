@@ -1,0 +1,63 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "init": "./commands/init",
+    "update": "./commands/update",
+    "preinstall": "npm cache clean",
+    "precommit": "npm test",
+    "test": "./commands/test",
+    "start": "./commands/start"
+  },
+  "dependencies": {
+    "babel-core": "^5.8.25",
+    "bound-native-methods": "^0.1.6",
+  },
+  "devDependencies": {
+    "webpack": "^1.12.2",
+    "babel-runtime": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "express": "^4.13.3",
+    "webpack-dev-middleware": "^1.2.0",
+    "husky": "^0.10.1"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "babel": {
+    "stage": 0,
+    "loose": "all",
+    "experimental": true,
+    "optional": [
+      "runtime",
+      "minification.constantFolding"
+    ]
+  },
+  "semistandard": {
+    "parser": "babel-eslint"
+  },
+  "#comments": {
+    "scripts": {
+      "init": ["", "$ npm run init"],
+      "update": ["", "$ npm run update"],
+      "test": ["", "$ npm test"],
+      "start": ["", "$ npm start"]
+    },
+    "dependencies": {
+      "babel-core": ["ECMAScript 2015+", "babel-core/polyfill"]
+    },
+    "devDependencies": {
+      "webpack": ["Webpack"],
+      "express": ["Development Server"],
+      "husky": ["Git Hooks"]
+    }
+  }
+}

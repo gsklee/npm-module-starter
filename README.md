@@ -1,1 +1,2 @@
-# npm-module-starter
+NPM Module Starter
+==================
